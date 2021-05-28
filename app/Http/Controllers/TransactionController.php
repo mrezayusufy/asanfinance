@@ -61,7 +61,6 @@ class TransactionController extends Controller
         $transactions = array();
         $format = 'Y-m-d H:i:s';
          
-        // dd($withdrawHistory);
         foreach ($depositHistory['depositList'] as $i) {
             $time = $i['insertTime'];
             $date = new DateTime(Carbon::parse($time/1000));
